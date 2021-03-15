@@ -27,7 +27,7 @@ SECRET_KEY = '0z6itlh7b09n_r)knmvul!=3)jlex(oon_dmg+!%*niay1y1*v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','imageresizeronline.com']
+ALLOWED_HOSTS = ['127.0.0.1','https://imageresizeronline.herokuapp.com/']
 
 
 # Application definition
