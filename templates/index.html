@@ -1,0 +1,196 @@
+{% extends 'index_base.html' %}
+
+{% block choose-multiple%}
+
+<form 
+
+ enctype="multipart/form-data" method="post"
+ action='{{form_url}}'>
+
+
+
+<div style="padding: 16px 32px;
+				
+				background-color:white;
+				">
+					
+
+                    <h1>Image Resizer Online</h1>
+			
+					<div >
+						<p >Select Images</p>
+                        <p>Upload image from your computer:
+</p>
+						<div style="padding: 8px 0">
+							<input
+
+							 type="file" name="choose-file"
+
+                            />
+
+						</div>
+
+
+	<p style="padding: 8px 0">
+							You can select multiple files or upload .zip archive with images.
+
+
+						</p>
+
+
+						<p ><span style="font-weight:bold">Or</span> Paste Image URI</p>
+												<p ><span style="font-weight:bold">Note </span>currently Base64 data uri like <span style="font-weight:bold">data:image/jpeg;base64....</span> not supported</p>
+
+						<div >
+							<input
+                            							placeholder='Enter image url...'
+
+                            style="padding:8px;
+                            margin:8px 0;
+                            "
+                             type="url" name="data-uri" >
+						</div>
+						<p >
+							GIF / JPG / PNG / APNG / HEIC / MNG / FLIF / WebP or other images, up to 2000 files.
+
+						</p>
+						<p style="padding: 8px 0">
+							Max file size 6MB each or 100MB in total.
+
+						</p>
+					
+						<button style="padding: 8px 16px;
+background-color: purple;
+color: white;
+font-weight: bold;
+
+border: none;
+outline:none;
+border-radius:4px;
+
+">
+							Upload files !!!
+						</button>
+					</div>
+                   				</div>
+
+
+								   
+<div style="padding: 16px 32px;
+				margin:8px 0;
+				background-color:white;
+				">
+
+                <h5>Note:
+</h5>
+				<p style="padding:8px 0">
+WebP is a relatively new image format with good compression and image quality, but not all web browsers and image viewers support it yet. If you have a picture in WebP format and want to convert it to the more common JPG format, this tool is one of the simplest ways to do it.
+                </p>	
+
+                	
+
+</div>
+
+
+
+<div style="padding: 16px 32px;
+				margin:8px 0;
+				background-color:white;
+				">
+
+                <h2>Image Resizer Online
+</h2>
+				<p style="padding:8px 0">
+WebP is a relatively new image format with good compression and image quality, but not all web browsers and image viewers support it yet. If you have a picture in WebP format and want to convert it to the more common JPG format, this tool is one of the simplest ways to do it.
+                </p>	
+
+                	<p style="padding:8px 0">
+WebP is a relatively new image format with good compression and image quality, but not all web browsers and image viewers support it yet. If you have a picture in WebP format and want to convert it to the more common JPG format, this tool is one of the simplest ways to do it.
+                </p>	
+                	<p style="padding:8px 0">
+WebP is a relatively new image format with good compression and image quality, but not all web browsers and image viewers support it yet. If you have a picture in WebP format and want to convert it to the more common JPG format, this tool is one of the simplest ways to do it.
+                </p>	
+
+</div>
+       
+ 
+{% endblock %}
+
+{% block info_tool%}
+
+
+
+
+
+<div style="padding: 16px 32px;
+				margin:8px 0;
+				background-color:white;
+				">
+
+                <h1>Online WebP image to JPG (JPEG) converter
+</h1>
+				<p style="padding:8px 0">
+WebP is a relatively new image format with good compression and image quality, but not all web browsers and image viewers support it yet. If you have a picture in WebP format and want to convert it to the more common JPG format, this tool is one of the simplest ways to do it.
+                </p>	
+
+                	<p style="padding:8px 0">
+WebP is a relatively new image format with good compression and image quality, but not all web browsers and image viewers support it yet. If you have a picture in WebP format and want to convert it to the more common JPG format, this tool is one of the simplest ways to do it.
+                </p>	
+                	<p style="padding:8px 0">
+WebP is a relatively new image format with good compression and image quality, but not all web browsers and image viewers support it yet. If you have a picture in WebP format and want to convert it to the more common JPG format, this tool is one of the simplest ways to do it.
+                </p>	
+
+</div>
+            
+
+          
+
+
+
+
+			
+{% endblock %}
+
+
+
+
+
+
+
+{% block resizer_panel%}
+{% include 'image_resizer/resizer_panel.html' %}
+{% endblock %}
+
+{% block image_resizer_download%}
+{% include 'image_resizer/image_resizer_download.html' %}
+{% endblock %}
+
+
+{% block note_info%}
+
+
+
+
+
+<div style="padding: 16px 32px;
+				margin:8px 0;
+				background-color:white;
+				">
+
+                <h1>Note:
+</h1>
+				<p style="padding:8px 0">
+WebP is a relatively new image format with good compression and image quality, but not all web browsers and image viewers support it yet. If you have a picture in WebP format and want to convert it to the more common JPG format, this tool is one of the simplest ways to do it.
+                </p>	
+
+                	
+
+</div>
+            
+{% endblock %}
+
+
+
+
+
+

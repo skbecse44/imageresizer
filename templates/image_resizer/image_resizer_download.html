@@ -1,0 +1,189 @@
+
+<style>
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: purple;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid purple;
+}
+
+
+
+
+</style>
+
+<div style="padding: 16px 32px;
+				margin:8px 0;
+				background-color:white;
+
+                border-radius:4px;
+				">
+
+<div>
+
+<h1 style='margin-bottom:20px'>Download Resized Image</h1>
+<img 
+style='
+
+
+max-width:100%;
+display:block;
+height:100%;
+
+'
+
+alt=""
+src="{{file_url}}"/>
+
+</div>
+
+
+<div>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>File Attributes</th>
+            <th>Info</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    {%if file_info%}
+
+    {%if file_info.width%}
+ <tr>
+            <td>Width</td>
+            <td>{{file_info.width}} PX</td>
+        </tr>
+    {% endif %}
+
+       {%if file_info.height%}
+ <tr>
+            <td>Height</td>
+            <td>{{file_info.height}} PX</td>
+        </tr>
+    {% endif %}
+
+
+       {%if file_info.original_size %}
+ <tr>
+            <td>Original Size</td>
+            <td>{{file_info.original_size}}</td>
+        </tr>
+    {% endif %}
+
+       {%if file_info.type %}
+ <tr>
+            <td>Type</td>
+            <td>{{file_info.type}}</td>
+        </tr>
+    {% endif %}
+
+      {%if file_info.format%}
+ <tr>
+            <td>Format</td>
+            <td>{{file_info.format}}</td>
+        </tr>
+    {% endif %}
+    
+
+       {%if file_info.mode%}
+ <tr>
+            <td>Mode</td>
+            <td>{{file_info.mode}}</td>
+        </tr>
+    {% endif %}
+
+
+     
+
+    {% endif %}
+       
+        
+    </tbody>
+</table>
+
+
+
+<div>
+<input
+name='file-uri'
+type='number'
+min='1'
+max='2'
+value='1'
+
+style='position:absolute;
+visibility:hidden;
+'
+/>
+
+
+ </div>
+ 
+<input
+name='file-uri'
+type='url'
+required
+value='{{file_url}}'
+style='position:absolute;
+visibility:hidden;
+'
+/>
+ </div>
+	
+
+    <a href='{{file_url}}' download>
+<button style="padding: 8px 16px;
+background-color:purple;
+color: white;
+font-weight: bold;
+border: none;
+outline:none;
+border-radius:6px;
+
+
+">
+							Dowload
+						</button>
+    </a>
+		
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
